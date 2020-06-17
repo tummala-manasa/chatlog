@@ -1,0 +1,18 @@
+.mail {
+  position: absolute;
+  font-size: 10px;
+  border: 1px solid #9e9e9e;
+  background-color: white;
+  top: 50%;
+  padding: 2px 4px;
+  border-radius: 5px;
+  left: 10px;
+  display: none;
+}
+.img-wrap {
+  width: 100px;
+  height: 100px;
+}
+.img-wrap:hover .mail {
+  display: block;
+}
