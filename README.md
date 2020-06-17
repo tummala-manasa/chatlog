@@ -7,17 +7,15 @@ And as it is not a chat application, ability to send and receive messages is not
 
 ## To run server, I have user json-server for mocking the API
 
-1. cd chatlog-server
-2. npm install -g json-server
-3. json-server --watch db.json --port 3001
-4. Serve APIs are available at "http://localhost:3001/members" and "http://localhost:3001/messages"
+1. npm install -g json-server
+2. json-server --watch server/db.json --port 3001
+3. Serve APIs are available at "http://localhost:3001/members" and "http://localhost:3001/messages"
 
 ## To run client, I have used Create-React-App
 
-1. cd chatlog-client
-2. npm install
-3. npm start
-4. Open http://localhost:3000/ to see the changes
+1. npm install
+2. npm start
+3. Open http://localhost:3000/ to see the changes
 
 ## Features
 
