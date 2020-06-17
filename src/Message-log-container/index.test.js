@@ -32,9 +32,7 @@ test('Check if MessageLogContainer is rendered', () => {
     const componentInstance = MessageLogContainerWrap.instance();
 
     //Accessing react lifecyle methods
-    componentInstance.componentWillReceiveProps({
-        logs: mockArray
-    });
+    componentInstance.componentDidUpdate({ logs: [] });
 
     MessageLogContainerWrap.update();
 

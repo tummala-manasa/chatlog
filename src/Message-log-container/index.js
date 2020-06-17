@@ -13,8 +13,11 @@ class MessageLogContainer extends React.PureComponent {
         }
         this.handleScroll = this.handleScroll.bind(this);
     }
-    componentWillReceiveProps(props) {
-        this.loadLogs(props.logs);
+
+    componentDidUpdate(prevProps) {
+        if (prevProps.logs !== this.props.logs) {
+            this.loadLogs(this.props.logs);
+        }
     }
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll);
